@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Inline CSS -->
+    <style>
+        * {
+            font-family: "Merriweather", serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mx-auto ">
+        <!-- Navbar -->
+        <nav
+            class="flex flex-wrap items-center justify-between px-5 py-4 shadow fixed top-0 left-0 right-0 bg-black z-50">
+            <!-- Logo -->
+            <a href="#home" class="text-3xl text-teal-300 font-bold sm:ml-5">Dhanya</a>
+
+            <!--  Menubar -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <label for="menu-toggle" class="block md:hidden cursor-pointer">
+                <i class="fas fa-bars text-teal-300 text-2xl"></i>
+            </label>
+
+            <!-- Navbar Links -->
+            <ul
+                class="hidden md:flex flex-col md:flex-row items-center md:space-x-16 space-y-4 md:space-y-0 absolute md:relative left-0 top-14 md:top-0 bg-black md:bg-transparent w-full md:w-auto p-5 md:p-0 peer-checked:flex">
+                <li><a href="#home" class="text-white text-lg font-bold hover:text-teal-300">Home</a></li>
+                <li><a href="#about" class="text-white text-lg font-bold hover:text-teal-300">About</a></li>
+                <li><a href="#skills" class="text-white text-lg font-bold hover:text-teal-300">Skills</a></li>
+                <li><a href="#projects" class="text-white text-lg font-bold hover:text-teal-300">Projects</a></li>
+                <li><a href="#contact" class="text-white text-lg font-bold hover:text-teal-300">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home" class="relative bg-cover bg-no-repeat bg-center w-full"
+            style="background-image: url('https://i.pinimg.com/736x/4f/d6/22/4fd622433a21e15d7c12d7e2390f87ad.jpg'); height: 620px; margin-top: 70px;">
+            <div class=" mx-auto grid grid-cols-1 md:grid-cols-2 h-full items-center">
+                <div class="text-center md:text-center text-white mt-16 md:mt-0">
+                    <h4 class="text-3xl">It's Me <span class="text-teal-300 font-bold">Dhanya...</span></h4>
+                    <p class="mt-4 text-2xl md:text-4xl">A MEARN Stack Developer</p>
+                    <div class="mt-6">
+                        <a href="./media/dhanya cv.pdf" download
+                            class="btn bg-teal-300 text-black font-semibold px-6 py-2 rounded-xl hover:bg-black hover:border hover:border-teal-300 hover:text-teal-300">Download
+                            CV</a>
+                    </div>
+                </div>
+                <div class="flex justify-center md:justify-center">
+                    <img src="./media/dhanya dp.jpg" alt="Dhanya"
+                        class="w-72 h-72 rounded-full shadow-md border-2 border-teal-300 transform transition duration-300 hover:scale-105 hover:shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about" class="py-10 bg-teal-300">
+            <div class="container mx-auto">
+                <h4 class="text-black text-4xl font-bold text-center mt-10">ABOUT ME</span></h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 md:mt-10 bg-black rounded-xl shadow-lg px-6 md:px-12 py-8 md:py-16 mx-auto" 
+                     style="max-width: calc(100% - 2rem);">
+                    <div class="flex justify-center">
+                        <img src="./media/dhanya dp.jpg" alt="Dhanya profile picture"
+                            class="w-full max-w-sm h-auto rounded-xl shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg">
+                    </div>
+                    <div>
+                        <p class="text-white text-md md:text-lg leading-relaxed px-4">
+                            I am a passionate learner, currently studying <span class="text-teal-300">MEARN</span> stack development at Luminar Technolab. I’m dedicated to building dynamic and responsive web applications using modern technologies like MongoDB, Express.js, React, and Node.js.
+                            <p class="text-white text-md md:text-lg leading-relaxed px-4 mt-2">With a focus on clean code and user-friendly design, I aim to create solutions that are both efficient and impactful. I’m constantly exploring new concepts and refining my skills to stay ahead in the ever-evolving world of web development</p>
+                        </p>
+                        <div class="mt-2">
+                            <i class="fa-regular fa-user text-teal-300 ml-4 text-xl"></i>
+                            <span class="text-white ml-2">Dhanya R</span><br>
+                            <i class="fa-solid fa-calendar-days text-teal-300 ml-4 text-xl"></i>
+                            <span class="text-white ml-2">21/12/2000</span><br>
+                            <i class="fa-solid fa-phone text-teal-300 ml-4 mt-2 text-xl"></i>
+                            <span class="text-white ml-2">8714968593</span><br>
+                            <i class="fa-regular fa-envelope text-teal-300 ml-4 mt-2 text-xl"></i>
+                            <span class="text-white text-sm md:ml-2">dhanyaanurajofficial@gmail.com</span><br>
+                            <i class="fa-brands fa-github text-teal-300 ml-4 mt-2 text-xl"></i>
+                            <span class="text-white ml-2">Dhanya-anuraj</span><br>
+                            <i class="fa-brands fa-linkedin-in text-teal-300 ml-4 mt-2 text-xl"></i>
+                            <span class="text-white ml-2">Dhanya Anuraj</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+         <section id="skills" class="bg-teal-300 py-16">
+            <div class="container mx-auto">
+                <h4 class="text-black text-4xl font-bold text-center">MY SKILLS</span></h4>
+                <p class="text-white text-md md:text-lg text-center mt-4">
+                    Below is a list of my technical skills .
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mt-16 px-6 md:px-12">
+                    <!-- Skill Card -->
+                    <div class="flex flex-col items-center bg-black shadow-lg rounded-lg p-4 transform transition duration-300 hover:scale-105">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" class="w-16 h-16 rounded-full">
+                        <h5 class="text-white text-lg font-semibold mt-4 text-center">HTML5</h5>
+                    </div>
+                    <div class="flex flex-col items-center bg-black shadow-lg rounded-lg p-4 transform transition duration-300 hover:scale-105">
+                        <img src="https://miro.medium.com/v2/resize:fit:300/1*Aenej4dxqEZ9j7zsI9pSnw.png" alt="CSS3" class="w-16 h-16 rounded-full">
+                        <h5 class="text-white text-lg font-semibold mt-4 text-center">CSS3</h5>
+                    </div>
+                    <div class="flex flex-col items-center bg-black shadow-lg rounded-lg p-4 transform transition duration-300 hover:scale-105">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkt5wzZ1LZXdBJSY1lele-BsBxzSxDph8TQA&s" alt="bootstrap" class="w-16 h-16 rounded-full">
+                        <h5 class="text-white text-lg font-semibold mt-4 text-center">Bootstrap</h5>
+                    </div>
+                    <div class="flex flex-col items-center bg-black shadow-lg rounded-lg p-4 transform transition duration-300 hover:scale-105">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDKn3vA2YUbXzN0ZC3gALWJ08gJN-Drl15w&s" alt="tailwind" class="w-16 h-16 rounded-full">
+                        <h5 class="text-white text-lg font-semibold mt-4 text-center">Tailwind CSS</h5>
+                    </div>
+                    <div class="flex flex-col items-center bg-black shadow-lg rounded-lg p-4 transform transition duration-300 hover:scale-105">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXhjVqtRd6tiqcsSQ7rD6VF7NxI-3VvoR0w&s" alt="js" class="w-16 h-16 rounded-full">
+                        <h5 class="text-white text-lg font-semibold mt-4 text-center">JavaScript</h5>
+                    </div>
+                    <div class="flex flex-col items-center bg-black shadow-lg rounded-lg p-4 transform transition duration-300 hover:scale-105">
+                        <img src="https://www.guvi.in/blog/wp-content/uploads/2023/10/C-Programming-1200x675.webp" alt="c" class="w-16 h-16 rounded-full">
+                        <h5 class="text-white text-lg font-semibold mt-4 text-center">C Programming</h5>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- projects -->
+         <section id="projects" class="py-20 bg-teal-300">
+         <div class="container">
+            <h4 class="text-black text-4xl font-bold text-center md:mt-8">MY PROJECTS</span></h4>
+            <!-- grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 mt-16">
+                <!-- card1 -->
+                <div class="max-w-sm mx-auto bg-black rounded-lg shadow-md overflow-hidden items-center">
+                    <img
+                      class="w-full h-48 object-cover p-2 rounded-xl"
+                      src="./media/educaion.png"
+                      alt="Card1">
+                    <div class="p-4">
+                      <h2 class="text-xl text-center font-semibold text-white">Online Educational System</h2>
+                      <p class="mt-2 text-white">
+                        "Learn Anywhere Grow Anywhere"This system made with HTML, CSS & Bootstrap.
+                      </p>
+                      <div class="flex justify-center mt-4 gap-4">
+                        <a href="" class="btn bg-teal-300 px-4 py-2  text-black rounded-xl shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg">
+                            GitHub
+                        </a>
+                        <a href="" class="btn bg-black px-4 py-2  text-teal-300 border border-teal-300 rounded-xl hover:bg-teal-300 hover:text-black">
+                            Live Link
+                        </a>
+                    </div>                    
+                </div>
+                  </div>
+
+                  <div class="max-w-sm mx-auto bg-black rounded-lg shadow-md overflow-hidden items-center">
+                    <img
+                      class="w-full h-48 object-cover p-2 rounded-xl"
+                      src="./media/educaion.png"
+                      alt="Card1">
+                    <div class="p-4">
+                      <h2 class="text-xl text-center font-semibold text-white">Online Educational System</h2>
+                      <p class="mt-2 text-white">
+                        "Learn Anywhere Grow Anywhere"This system made with HTML, CSS & Bootstrap.
+                      </p>
+                      <div class="flex justify-center mt-4 gap-4">
+                        <a href="" class="btn bg-teal-300 px-4 py-2  text-black rounded-xl shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg">
+                            GitHub
+                        </a>
+                        <a href="" class="btn bg-black px-4 py-2  text-teal-300 border border-teal-300 rounded-xl hover:bg-teal-300 hover:text-black">
+                            Live Link
+                        </a>
+                    </div>                    
+                </div>
+                  </div>
+
+
+                  <div class="max-w-sm mx-auto bg-black rounded-lg shadow-md overflow-hidden items-center">
+                    <img
+                      class="w-full h-48 object-cover p-2 rounded-xl"
+                      src="./media/educaion.png"
+                      alt="Card1">
+                    <div class="p-4">
+                      <h2 class="text-xl text-center font-semibold text-white">Online Educational System</h2>
+                      <p class="mt-2 text-white">
+                        "Learn Anywhere Grow Anywhere"This system made with HTML, CSS & Bootstrap.
+                      </p>
+                      <div class="flex justify-center mt-4 gap-4">
+                        <a href="" class="btn bg-teal-300 px-4 py-2  text-black rounded-xl shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg">
+                            GitHub
+                        </a>
+                        <a href="" class="btn bg-black px-4 py-2  text-teal-300 border border-teal-300 rounded-xl hover:bg-teal-300 hover:text-black">
+                            Live Link
+                        </a>
+                    </div>                    
+                </div>
+                  </div>
+   
+
+                  <div class="max-w-sm mx-auto bg-black rounded-lg shadow-md overflow-hidden items-center">
+                    <img
+                      class="w-full h-48 object-cover p-2 rounded-xl"
+                      src="./media/educaion.png"
+                      alt="Card1">
+                    <div class="p-4">
+                      <h2 class="text-xl text-center font-semibold text-white">Online Educational System</h2>
+                      <p class="mt-2 text-white">
+                        "Learn Anywhere Grow Anywhere"This system made with HTML, CSS & Bootstrap.
+                      </p>
+                      <div class="flex justify-center mt-4 gap-4">
+                        <a href="" class="btn bg-teal-300 px-4 py-2  text-black rounded-xl shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg">
+                            GitHub
+                        </a>
+                        <a href="" class="btn bg-black px-4 py-2  text-teal-300 border border-teal-300 rounded-xl hover:bg-teal-300 hover:text-black">
+                            Live Link
+                        </a>
+                    </div>                    
+                </div>
+                  </div>
+
+
+                  <div class="max-w-sm mx-auto bg-black rounded-lg shadow-md overflow-hidden items-center">
+                    <img
+                      class="w-full h-48 object-cover p-2 rounded-xl"
+                      src="./media/educaion.png"
+                      alt="Card1">
+                    <div class="p-4">
+                      <h2 class="text-xl text-center font-semibold text-white">Online Educational System</h2>
+                      <p class="mt-2 text-white">
+                        "Learn Anywhere Grow Anywhere"This system made with HTML, CSS & Bootstrap.
+                      </p>
+                      <div class="flex justify-center mt-4 gap-4">
+                        <a href="" class="btn bg-teal-300 px-4 py-2  text-black rounded-xl shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg">
+                            GitHub
+                        </a>
+                        <a href="" class="btn bg-black px-4 py-2  text-teal-300 border border-teal-300 rounded-xl hover:bg-teal-300 hover:text-black">
+                            Live Link
+                        </a>
+                    </div>                    
+                </div>
+                  </div>
+
+
+                  <div class="max-w-sm mx-auto bg-black rounded-lg shadow-md overflow-hidden items-center">
+                    <img
+                      class="w-full h-48 object-cover p-2 rounded-xl"
+                      src="./media/educaion.png"
+                      alt="Card1">
+                    <div class="p-4">
+                      <h2 class="text-xl text-center font-semibold text-white">Online Educational System</h2>
+                      <p class="mt-2 text-white">
+                        "Learn Anywhere Grow Anywhere"This system made with HTML, CSS & Bootstrap.
+                      </p>
+                      <div class="flex justify-center mt-4 gap-4">
+                        <a href="" class="btn bg-teal-300 px-4 py-2  text-black rounded-xl shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg">
+                            GitHub
+                        </a>
+                        <a href="" class="btn bg-black px-4 py-2  text-teal-300 border border-teal-300 rounded-xl hover:bg-teal-300 hover:text-black">
+                            Live Link
+                        </a>
+                    </div>                    
+                </div>
+                  </div>
+
+                  
+            </div>
+         </div>
+         </section>
+        
+    </div>
+</body>
+
+</html>
